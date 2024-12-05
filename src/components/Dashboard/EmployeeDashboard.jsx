@@ -10,6 +10,7 @@ const EmployeeDashboard = ({ data }) => {
             <Header data = {data} />
             <TaskNumbers data = {data} />
             <Tasklist data = {data} />
+            
         </div>
     )
 }

@@ -29,6 +29,7 @@ function App() {
       const employee = authData.employees.find((e)=>email == e.email && e.password == password)
       if(employee){
         setUser('employee');
+        setLoggedInUserData(employee)
         localStorage.setItem("loggedInUser", JSON.stringify({role: "employee"}))
       }
     } 
@@ -36,9 +37,6 @@ function App() {
       alert('User doesnot exist')
     }
   }
-
-  
-  
 
   return (
     <>

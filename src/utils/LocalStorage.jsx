@@ -9,7 +9,8 @@ const employees = [
         "taskNumber": {
             "active": 2,
             "newTask": 1,
-            "completed": 2
+            "completed": 2,
+            "failed": 0
         },
         "tasks": [
             {
@@ -19,7 +20,8 @@ const employees = [
                 "category": "Design",
                 "active": true,
                 "newTask": true,
-                "completed": false
+                "completed": false,
+                "failed": false
             },
             {
                 "taskTitle": "Fix Bug #123",
@@ -28,7 +30,8 @@ const employees = [
                 "category": "Development",
                 "active": true,
                 "newTask": false,
-                "completed": true
+                "completed": true,
+                "failed": false
             },
             {
                 "taskTitle": "Team Meeting",
@@ -37,7 +40,8 @@ const employees = [
                 "category": "Management",
                 "active": false,
                 "newTask": false,
-                "completed": true
+                "completed": true,
+                "failed": false
             }
         ]
     },
@@ -49,7 +53,8 @@ const employees = [
         "taskNumber": {
             "active": 2,
             "newTask": 2,
-            "completed": 1
+            "completed": 1,
+            "failed": 0
         },
         "tasks": [
             {
@@ -59,7 +64,8 @@ const employees = [
                 "category": "Development",
                 "active": true,
                 "newTask": true,
-                "completed": false
+                "completed": false,
+                "failed": false
             },
             {
                 "taskTitle": "Update Documentation",
@@ -68,7 +74,8 @@ const employees = [
                 "category": "Documentation",
                 "active": false,
                 "newTask": false,
-                "completed": true
+                "completed": true,
+                "failed": false
             },
             {
                 "taskTitle": "Client Feedback",
@@ -77,7 +84,8 @@ const employees = [
                 "category": "Management",
                 "active": true,
                 "newTask": true,
-                "completed": false
+                "completed": false,
+                "failed": false
             }
         ]
     },
@@ -89,7 +97,8 @@ const employees = [
         "taskNumber": {
             "active": 2,
             "newTask": 2,
-            "completed": 1
+            "completed": 1,
+            "failed": 0
         },
         "tasks": [
             {
@@ -99,7 +108,8 @@ const employees = [
                 "category": "Marketing",
                 "active": true,
                 "newTask": true,
-                "completed": false
+                "completed": false,
+                "failed": false
             },
             {
                 "taskTitle": "Design Logo",
@@ -108,7 +118,8 @@ const employees = [
                 "category": "Design",
                 "active": true,
                 "newTask": true,
-                "completed": false
+                "completed": false,
+                "failed": false
             },
             {
                 "taskTitle": "Server Maintenance",
@@ -117,7 +128,8 @@ const employees = [
                 "category": "IT",
                 "active": false,
                 "newTask": false,
-                "completed": true
+                "completed": true,
+                "failed": false
             }
         ]
     },
@@ -129,7 +141,8 @@ const employees = [
         "taskNumber": {
             "active": 2,
             "newTask": 1,
-            "completed": 2
+            "completed": 2,
+            "failed": 0
         },
         "tasks": [
             {
@@ -139,7 +152,8 @@ const employees = [
                 "category": "Research",
                 "active": true,
                 "newTask": true,
-                "completed": false
+                "completed": false,
+                "failed": false
             },
             {
                 "taskTitle": "Financial Report",
@@ -148,7 +162,8 @@ const employees = [
                 "category": "Finance",
                 "active": false,
                 "newTask": false,
-                "completed": true
+                "completed": true,
+                "failed": false
             },
             {
                 "taskTitle": "Code Review",
@@ -157,7 +172,8 @@ const employees = [
                 "category": "Development",
                 "active": true,
                 "newTask": false,
-                "completed": true
+                "completed": true,
+                "failed": false
             }
         ]
     },
@@ -169,7 +185,8 @@ const employees = [
         "taskNumber": {
             "active": 2,
             "newTask": 2,
-            "completed": 1
+            "completed": 1,
+            "failed": 0
         },
         "tasks": [
             {
@@ -179,7 +196,8 @@ const employees = [
                 "category": "Support",
                 "active": true,
                 "newTask": true,
-                "completed": false
+                "completed": false,
+                "failed": false
             },
             {
                 "taskTitle": "Team Lunch",
@@ -188,7 +206,8 @@ const employees = [
                 "category": "Management",
                 "active": false,
                 "newTask": false,
-                "completed": true
+                "completed": true,
+                "failed": false
             },
             {
                 "taskTitle": "Product Launch",
@@ -197,11 +216,13 @@ const employees = [
                 "category": "Marketing",
                 "active": true,
                 "newTask": true,
-                "completed": false
+                "completed": false,
+                "failed": false
             }
         ]
     }
 ];
+
 
 const admin = [{
     "id": 1,
