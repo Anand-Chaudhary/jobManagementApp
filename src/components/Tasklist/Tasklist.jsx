@@ -12,7 +12,7 @@ const Tasklist = ({ data }) => {
                 if (ellem.active) {
                     return <AcceptTask key={i} data={ellem} />
                 }
-                if (ellem.newTask) {
+                if (ellem.newTask == true && ellem.active == true) {
                     return <NewTask key={i} data={ellem} />
                 }
                 if (ellem.completed) {

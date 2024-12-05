@@ -35,7 +35,7 @@ function App() {
     if(email == 'admin@me.com' && password == '123'){
       const admin = authData.admin.find((e)=>email == e.email && e.password == password)
       setUser('admin');
-      setLoggedInUserData(admin)
+      setLoggedInUserData(admin);
       localStorage.setItem("loggedInUser", JSON.stringify({role: "admin"}))
     } 
     else if(authData){
@@ -47,7 +47,7 @@ function App() {
       }
     } 
     else{
-      alert('User doesnot exist')
+      alert('User doesnot exist');
     }
   }
 

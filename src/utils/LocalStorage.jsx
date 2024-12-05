@@ -30,7 +30,7 @@ const employees = [
                 "category": "Development",
                 "active": true,
                 "newTask": false,
-                "completed": true,
+                "completed": false,
                 "failed": false
             },
             {
