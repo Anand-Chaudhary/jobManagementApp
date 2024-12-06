@@ -5,13 +5,30 @@ const CreateTask = () => {
     const [taskTitle, setTaskTitle] = useState('');
     const [taskDescription, setTaskDescription] = useState('');
     const [taskDate, setTaskDate] = useState('');
-    const [assignTO, setAssignTO] = useState('');
+    const [assignTo, setAssignTo] = useState('');
     const [category, setCategory] = useState('');
-    const [task, setTask] = useState([])
+    const [newTask, setNewTask] = useState([]);
 
     const submitHandler = (e) =>{
-        e.preventDefault();
-        
+        e.preventDefault()
+
+        setNewTask({ taskTitle, taskDescription, taskDate, category, active: false, newTask: true, failed: false, completed: false })
+
+        const data = JSON.parse(localStorage.getItem('employees'))
+
+        data.forEach(function (elem) {
+            if (assignTo == elem.name) {
+                elem.tasks.push(newTask)
+                console.log(elem);
+            }
+        })
+
+
+        setTaskTitle('')
+        setCategory('')
+        setAssignTo('')
+        setTaskDate('')
+        setTaskDescription('')
     }
 
     return (
@@ -43,8 +60,8 @@ const CreateTask = () => {
                         <div>
                             <h3 className="text-lg font-semibold mb-2">Assign</h3>
                             <input
-                            value = {assignTO}
-                            onChange = {(e)=>{setAssignTO(e.target.value)}}
+                            value = {assignTo}
+                            onChange = {(e)=>{setAssignTo(e.target.value)}}
                                 type="text"
                                 className="w-full border-2 outline-none placeholder:text-gray-500 rounded-lg bg-gray-50 text-lg px-4 py-2 text-black"
                                 placeholder="Assign to"

@@ -2,10 +2,10 @@ import React from 'react'
 import Header from '../../others/Header'
 import CreateTask from '../../others/CreateTask'
 
-const AdminDashboard = ({ data }) => {
+const AdminDashboard = (props) => {
     return (
         <div className='h-full w-full p-7'>
-            <Header data = { data }/>
+            <Header changeUser = {props.changeUser} data = { props.data }/>
             <CreateTask />
         </div>
     )
