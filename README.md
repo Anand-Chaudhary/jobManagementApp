@@ -49,7 +49,7 @@ A simple and efficient Job Management System built using Vite and React. This ap
 
 4. Open the app in your browser:
    ```
-   http://localhost:3000
+   http://localhost:5173
    ```
 
 ## Usage
@@ -58,7 +58,14 @@ A simple and efficient Job Management System built using Vite and React. This ap
 3. **Task Management**: Add, assign, and update tasks seamlessly.
 
 ## Screenshots
-(Include relevant screenshots of the app here to showcase the UI and features.)
+**Login Page:**
+![Alt text](src/assets/LoginPage.png)
+
+**Admin DashBoard:**
+![Alt text](src/assets/AdminDashboard.png)
+
+**Employee DashBoard:**
+![Alt text](src/assets/EmployeeDashboard.png)
 
 ## Future Enhancements
 - Add role-based authentication.
