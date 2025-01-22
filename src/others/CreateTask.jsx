@@ -19,8 +19,6 @@ const CreateTask = () => {
         setNewTask({ taskTitle, taskDescription, taskDate, category, active: false, newTask: true, failed: false, completed: false })
 
         const data = userData
-        console.log(data);
-        
 
         data.forEach(function (elem) {
             if (assignTo == elem.name) {
@@ -28,7 +26,7 @@ const CreateTask = () => {
                 elem.taskNumber.newTask += 1
             }
         })
-        setUserData(data)
+        setUserData(data);
         console.log(data);
         
 
